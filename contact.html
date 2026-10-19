@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Контакты | Моя визитка</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="logo">MyBrand</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="about.html">Обо мне</a></li>
+      <li><a href="contact.html">Контакты</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <header class="page-header">
+      <h1 class="fade-in">Контакты</h1>
+    </header>
+
+    <section class="contact-section">
+      <div class="contact-info fade-up">
+        <h3>Связаться со мной</h3>
+        <p><strong>Email:</strong> hello@example.com</p>
+        <p><strong>Телефон:</strong> +7 (999) 000-00-00</p>
+        <p><strong>Telegram:</strong> @my_telegram</p>
+      </div>
+
+      <form class="contact-form fade-up" onsubmit="event.preventDefault(); handleContactForm(this);">
+        <label for="name">Ваше vopti</label>
+        <input type="text" id="name" name="name" required placeholder="Иван Иванов" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="hello@example.com" />
+
+        <label for="message">Сообщение</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Расскажите, что хотите"></textarea>
+
+        <button type="submit" class="btn">Отправить</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 MyBrand. Все права защищены.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
